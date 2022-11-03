@@ -106,11 +106,11 @@ for (let i = 0; i < candles.length; i++) {
 
   console.log(`${candles[i].getName()}: 
   Amount: ${candles[i].getAmount()}
-  Burn Time:  ${candles[i].getBurnTime()} hours
-  Dollar per Burn Time: ${candles[i].getTotalCostPerBurn()}
-  Price: $${candles[i].getTotalPrice()}`);
+  Burn Time:  ${candles[i].getBurnTime().toFixed(2)} hours
+  Dollar per Burn Time: ${candles[i].getTotalCostPerBurn().toFixed(2)}
+  Price: $${candles[i].getTotalPrice().toFixed(2)}`);
 }
 
-console.log(`Total Burn Time: ${grandTotalBurnTime} 
-Total Dollar per Burn Time: ${grandCostPerBurnTime} 
-Total Price: ${grandTotal}`);
+console.log(`Total Burn Time: ${grandTotalBurnTime.toFixed(2)} 
+Total Dollar per Burn Time: ${grandCostPerBurnTime.toFixed(2)} 
+Total Price: ${grandTotal.toFixed(2)}`);
