@@ -76,8 +76,6 @@ const candleThree: Candle = new Candle("Spicy N' Dicey", 5.99, 12, 0);
 
 const candles: Array<Candle> = [candleOne, candleTwo, candleThree];
 
-// TODO find a way take in inputs Scanner keyboard = new Scanner(System.in);
-
 let scanner = prompt({ echo: "" });
 
 const exec: number = scanner("Enter 0 to continue: ");

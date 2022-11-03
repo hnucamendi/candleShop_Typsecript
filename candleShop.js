@@ -54,7 +54,6 @@ const candleOne = new Candle("Luscious Lavender", 2.5, 5, 0);
 const candleTwo = new Candle("Fragrant Floral's", 3.75, 7, 0);
 const candleThree = new Candle("Spicy N' Dicey", 5.99, 12, 0);
 const candles = [candleOne, candleTwo, candleThree];
-// TODO find a way take in inputs Scanner keyboard = new Scanner(System.in);
 let scanner = prompt({ echo: "" });
 const exec = scanner("Enter 0 to continue: ");
 if (exec != 0)
