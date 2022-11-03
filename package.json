@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "name": "candleshop_typsecript",
+  "version": "1.0.0",
+  "description": "Write a program that simulates a candleshop, there should be a minumum of three candles, and they must have:",
+  "main": "candleShop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hnucamendi/candleShop_Typsecript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hnucamendi/candleShop_Typsecript/issues"
+  },
+  "homepage": "https://github.com/hnucamendi/candleShop_Typsecript#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

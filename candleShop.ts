@@ -1,11 +1,13 @@
-interface Candle {
+import prompt from "prompt-sync";
+
+interface Candles {
   name: string;
   price: number;
   burnTime: number;
   amount: number;
 }
 
-class Candle {
+class Candle implements Candles {
   name: string;
   price: number;
   burnTime: number;
@@ -76,7 +78,10 @@ const candles: Array<Candle> = [candleOne, candleTwo, candleThree];
 
 // TODO find a way take in inputs Scanner keyboard = new Scanner(System.in);
 
-console.log("Enter 0 to continue: ");
+let scanner = prompt({ echo: "" });
+
+const exec: number = scanner("Enter 0 to continue: ");
+if (exec != 0) throw new Error("Must enter 0");
 // TODO: take in input to start program
 
 for (let i = 0; i < candles.length; i++) {
@@ -85,11 +90,8 @@ for (let i = 0; i < candles.length; i++) {
     `How many of the ${candles[i].getName()} candles would you like? Enter a number amount.`
   );
 
-  candles[i].setAmount(Math.floor(Math.random() * 30));
-
   //get next input
-
-  // candles[i].priceTotal();
+  candles[i].setAmount(scanner());
 
   grandTotal += candles[i].priceTotal();
   grandTotalBurnTime += candles[i].burnTimeTotal();

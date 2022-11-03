@@ -8,3 +8,8 @@ Write a program that simulates a candleshop, there should be a minumum of three 
 4. Amount
 
 You can customize these values as you like, ath the end of the program you should print grand total values of all the candles being sold.
+
+# Compile
+
+Compile using `tsc candleShop.ts --module "node16"`
+run using `node candleShop.js`
