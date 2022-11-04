@@ -11,5 +11,5 @@ You can customize these values as you like, ath the end of the program you shoul
 
 # Compile
 
-Compile using `tsc candleShop.ts --module "node16"`
+Compile using `tsc candleShop.ts --module "nodenext"`
 run using `node candleShop.js`
