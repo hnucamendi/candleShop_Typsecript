@@ -70,11 +70,11 @@ let grandTotal: number = 0.0;
 let grandTotalBurnTime: number = 0;
 let grandCostPerBurnTime: number = 0.0;
 
-const candleOne: Candle = new Candle("Luscious Lavender", 2.5, 5, 0);
-const candleTwo: Candle = new Candle("Fragrant Floral's", 3.75, 7, 0);
-const candleThree: Candle = new Candle("Spicy N' Dicey", 5.99, 12, 0);
-
-const candles: Array<Candle> = [candleOne, candleTwo, candleThree];
+const candles: Array<Candle> = [
+  new Candle("Luscious Lavender", 2.5, 5, 0),
+  new Candle("Fragrant Floral's", 3.75, 7, 0),
+  new Candle("Spicy N' Dicey", 5.99, 12, 0),
+];
 
 let scanner = prompt({ echo: "" });
 
