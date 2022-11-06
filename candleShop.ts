@@ -7,7 +7,7 @@ interface Candles {
   amount: number;
 }
 
-class Candle implements Candles {
+export class Candle implements Candles {
   name: string;
   price: number;
   burnTime: number;
@@ -80,7 +80,6 @@ let scanner = prompt({ echo: "" });
 
 const exec: number = scanner("Enter 0 to continue: ");
 if (exec != 0) throw new Error("Must enter 0");
-// TODO: take in input to start program
 
 for (let i = 0; i < candles.length; i++) {
   console.log(
